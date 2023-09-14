@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Tetris {
-    class Scenario {
+    public class Scenario {
 
         private readonly int[,] grid;
         public int Rows { get; }

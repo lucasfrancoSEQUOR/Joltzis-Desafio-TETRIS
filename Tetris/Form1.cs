@@ -1,5 +1,6 @@
 namespace Tetris {
     public partial class Inicio : Form {
+
         public Inicio() {
             InitializeComponent();
         }
@@ -22,6 +23,18 @@ namespace Tetris {
         }
 
         private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Panel_Paint(object sender, PaintEventArgs e) {
+
+        }
+
+        private void Frame_Tick(object sender, EventArgs e) {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e) {
 
         }
     }
