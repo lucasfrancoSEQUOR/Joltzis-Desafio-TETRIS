@@ -44,18 +44,6 @@ namespace Tetris {
             return scenario;
         }
 
-        public string PrintPos(IEnumerable<Position> pos)
-        {
-            string posStr = string.Empty;
-
-            foreach(Position p in pos)
-            {
-                posStr += $"Row: {p.Row} - Col: {p.Column}\n";
-            }
-
-            return posStr;
-        }
-
         public void Paint(Graphics graphics, Scenario scenario, IEnumerable<Position> currentTile, int tileId)
         {
             oldPos = currentTile;
