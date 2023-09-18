@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Accessibility;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Tetris {
-    public class Scenario {
+    public class Scenario : ICloneable {
 
         private readonly int[,] grid;
         public int Rows { get; }
@@ -77,7 +78,15 @@ namespace Tetris {
             return cleared;
         }
 
+        public object Clone()
+        {
+            Scenario scenario = new Scenario(Rows, Columns);
 
+            for (int i = 0; i < grid.GetLength(0); i++)
+                for (int j = 0; j < grid.GetLength(1); j++)
+                    scenario[i, j] = grid[i, j];
 
+            return scenario;
+        }
     }
 }

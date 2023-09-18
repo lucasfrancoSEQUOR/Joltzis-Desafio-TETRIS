@@ -43,7 +43,7 @@
             this.btnJogar.Font = new System.Drawing.Font("Cascadia Code", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnJogar.Image = global::Tetris.Properties.Resources.play_button_icon2;
             this.btnJogar.Location = new System.Drawing.Point(223, 383);
-            this.btnJogar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnJogar.Margin = new System.Windows.Forms.Padding(2);
             this.btnJogar.Name = "btnJogar";
             this.btnJogar.Size = new System.Drawing.Size(54, 46);
             this.btnJogar.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.btnRank.Font = new System.Drawing.Font("Cascadia Code", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRank.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnRank.Location = new System.Drawing.Point(305, 383);
-            this.btnRank.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRank.Margin = new System.Windows.Forms.Padding(2);
             this.btnRank.Name = "btnRank";
             this.btnRank.Size = new System.Drawing.Size(54, 46);
             this.btnRank.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.btnConfig.Font = new System.Drawing.Font("Cascadia Code", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConfig.Image = global::Tetris.Properties.Resources.config_icon;
             this.btnConfig.Location = new System.Drawing.Point(388, 383);
-            this.btnConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfig.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(54, 46);
             this.btnConfig.TabIndex = 1;
@@ -90,7 +90,7 @@
             // txtNomeJogador
             // 
             this.txtNomeJogador.Location = new System.Drawing.Point(127, 517);
-            this.txtNomeJogador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeJogador.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeJogador.Name = "txtNomeJogador";
             this.txtNomeJogador.Size = new System.Drawing.Size(182, 23);
             this.txtNomeJogador.TabIndex = 3;
@@ -109,7 +109,7 @@
             this.picLogo.Image = global::Tetris.Properties.Resources.logo_joltzisM;
             this.picLogo.InitialImage = global::Tetris.Properties.Resources.logo_joltzis;
             this.picLogo.Location = new System.Drawing.Point(125, 89);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(420, 145);
             this.picLogo.TabIndex = 4;
@@ -142,7 +142,7 @@
             this.Controls.Add(this.btnJogar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Inicio";

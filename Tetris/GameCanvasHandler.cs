@@ -12,6 +12,7 @@ namespace Tetris {
     public class GameCanvasHandler
     {
         private readonly int _pixelSize;
+        private IEnumerable<Position> oldPos;
 
         public GameCanvasHandler(int pixelSize)
         {
@@ -43,10 +44,26 @@ namespace Tetris {
             return scenario;
         }
 
+        public string PrintPos(IEnumerable<Position> pos)
+        {
+            string posStr = string.Empty;
+
+            foreach(Position p in pos)
+            {
+                posStr += $"Row: {p.Row} - Col: {p.Column}\n";
+            }
+
+            return posStr;
+        }
+
         public void Paint(Graphics graphics, Scenario scenario, IEnumerable<Position> currentTile, int tileId)
         {
+            oldPos = currentTile;
+
             int xPos = 0;
             int yPos = -2 * _pixelSize;
+
+            scenario = (Scenario)scenario.Clone();
 
             scenario = MergeCurrentTileWithScenario(scenario, currentTile, tileId);
 
