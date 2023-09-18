@@ -16,3 +16,22 @@ C:\Users\francoluc\OneDrive - SNEF BRASIL\Documentos\TETRIS\Tetris\Tetris\obj\De
 C:\Users\francoluc\OneDrive - SNEF BRASIL\Documentos\TETRIS\Tetris\Tetris\obj\Debug\net6.0-windows\ref\Tetris.dll
 C:\Users\francoluc\OneDrive - SNEF BRASIL\Documentos\TETRIS\Tetris\Tetris\obj\Debug\net6.0-windows\Tetris.Properties.Resources.resources
 C:\Users\francoluc\OneDrive - SNEF BRASIL\Documentos\TETRIS\Tetris\Tetris\obj\Debug\net6.0-windows\Tetris.Jogo.resources
+D:\tetris_lucas\Tetris\bin\Debug\net6.0-windows\Tetris.exe
+D:\tetris_lucas\Tetris\bin\Debug\net6.0-windows\Tetris.deps.json
+D:\tetris_lucas\Tetris\bin\Debug\net6.0-windows\Tetris.runtimeconfig.json
+D:\tetris_lucas\Tetris\bin\Debug\net6.0-windows\Tetris.dll
+D:\tetris_lucas\Tetris\bin\Debug\net6.0-windows\Tetris.pdb
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.csproj.AssemblyReference.cache
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.Inicio.resources
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.Jogo.resources
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.Properties.Resources.resources
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.csproj.GenerateResource.cache
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.GeneratedMSBuildEditorConfig.editorconfig
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.AssemblyInfoInputs.cache
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.AssemblyInfo.cs
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.csproj.CoreCompileInputs.cache
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.dll
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\refint\Tetris.dll
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.pdb
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\Tetris.genruntimeconfig.cache
+D:\tetris_lucas\Tetris\obj\Debug\net6.0-windows\ref\Tetris.dll

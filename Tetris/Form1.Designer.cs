@@ -23,132 +23,136 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            btnJogar = new Button();
-            btnRank = new Button();
-            btnConfig = new Button();
-            label1 = new Label();
-            txtNomeJogador = new TextBox();
-            Frame = new System.Windows.Forms.Timer(components);
-            fileSystemWatcher1 = new FileSystemWatcher();
-            picLogo = new PictureBox();
-            lbCreatedBy = new Label();
-            ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
-            SuspendLayout();
+            this.btnJogar = new System.Windows.Forms.Button();
+            this.btnRank = new System.Windows.Forms.Button();
+            this.btnConfig = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNomeJogador = new System.Windows.Forms.TextBox();
+            this.Frame = new System.Windows.Forms.Timer(this.components);
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.lbCreatedBy = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnJogar
             // 
-            btnJogar.Font = new Font("Cascadia Code", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            btnJogar.Image = Properties.Resources.play_button_icon2;
-            btnJogar.Location = new Point(319, 638);
-            btnJogar.Name = "btnJogar";
-            btnJogar.Size = new Size(77, 77);
-            btnJogar.TabIndex = 0;
-            btnJogar.UseVisualStyleBackColor = true;
-            btnJogar.Click += iniciarJogo;
+            this.btnJogar.Font = new System.Drawing.Font("Cascadia Code", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnJogar.Image = global::Tetris.Properties.Resources.play_button_icon2;
+            this.btnJogar.Location = new System.Drawing.Point(223, 383);
+            this.btnJogar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnJogar.Name = "btnJogar";
+            this.btnJogar.Size = new System.Drawing.Size(54, 46);
+            this.btnJogar.TabIndex = 0;
+            this.btnJogar.UseVisualStyleBackColor = true;
+            this.btnJogar.Click += new System.EventHandler(this.btnJogar_Click);
             // 
             // btnRank
             // 
-            btnRank.BackgroundImage = Properties.Resources.ranking_icon2;
-            btnRank.BackgroundImageLayout = ImageLayout.Center;
-            btnRank.Cursor = Cursors.No;
-            btnRank.Font = new Font("Cascadia Code", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRank.ImageAlign = ContentAlignment.BottomLeft;
-            btnRank.Location = new Point(436, 638);
-            btnRank.Name = "btnRank";
-            btnRank.Size = new Size(77, 77);
-            btnRank.TabIndex = 1;
-            btnRank.UseVisualStyleBackColor = true;
-            btnRank.Click += button1_Click_1;
+            this.btnRank.BackgroundImage = global::Tetris.Properties.Resources.ranking_icon2;
+            this.btnRank.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnRank.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnRank.Font = new System.Drawing.Font("Cascadia Code", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRank.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnRank.Location = new System.Drawing.Point(305, 383);
+            this.btnRank.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRank.Name = "btnRank";
+            this.btnRank.Size = new System.Drawing.Size(54, 46);
+            this.btnRank.TabIndex = 1;
+            this.btnRank.UseVisualStyleBackColor = true;
             // 
             // btnConfig
             // 
-            btnConfig.BackgroundImageLayout = ImageLayout.Center;
-            btnConfig.Cursor = Cursors.No;
-            btnConfig.Font = new Font("Cascadia Code", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            btnConfig.Image = Properties.Resources.config_icon;
-            btnConfig.Location = new Point(555, 638);
-            btnConfig.Name = "btnConfig";
-            btnConfig.Size = new Size(77, 77);
-            btnConfig.TabIndex = 1;
-            btnConfig.UseVisualStyleBackColor = true;
-            btnConfig.Click += button1_Click_1;
+            this.btnConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConfig.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnConfig.Font = new System.Drawing.Font("Cascadia Code", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConfig.Image = global::Tetris.Properties.Resources.config_icon;
+            this.btnConfig.Location = new System.Drawing.Point(388, 383);
+            this.btnConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(54, 46);
+            this.btnConfig.TabIndex = 1;
+            this.btnConfig.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(16, 862);
-            label1.Name = "label1";
-            label1.Size = new Size(160, 25);
-            label1.TabIndex = 2;
-            label1.Text = "Nome do jogador:";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 517);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nome do jogador:";
             // 
             // txtNomeJogador
             // 
-            txtNomeJogador.Location = new Point(182, 862);
-            txtNomeJogador.Name = "txtNomeJogador";
-            txtNomeJogador.Size = new Size(258, 31);
-            txtNomeJogador.TabIndex = 3;
+            this.txtNomeJogador.Location = new System.Drawing.Point(127, 517);
+            this.txtNomeJogador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeJogador.Name = "txtNomeJogador";
+            this.txtNomeJogador.Size = new System.Drawing.Size(182, 23);
+            this.txtNomeJogador.TabIndex = 3;
             // 
             // Frame
             // 
-            Frame.Tick += Frame_Tick;
+            this.Frame.Tick += new System.EventHandler(this.Frame_Tick_1);
             // 
             // fileSystemWatcher1
             // 
-            fileSystemWatcher1.EnableRaisingEvents = true;
-            fileSystemWatcher1.SynchronizingObject = this;
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // picLogo
             // 
-            picLogo.Image = Properties.Resources.logo_joltzisM;
-            picLogo.InitialImage = Properties.Resources.logo_joltzis;
-            picLogo.Location = new Point(179, 149);
-            picLogo.Name = "picLogo";
-            picLogo.Size = new Size(600, 242);
-            picLogo.TabIndex = 4;
-            picLogo.TabStop = false;
+            this.picLogo.Image = global::Tetris.Properties.Resources.logo_joltzisM;
+            this.picLogo.InitialImage = global::Tetris.Properties.Resources.logo_joltzis;
+            this.picLogo.Location = new System.Drawing.Point(125, 89);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(420, 145);
+            this.picLogo.TabIndex = 4;
+            this.picLogo.TabStop = false;
             // 
             // lbCreatedBy
             // 
-            lbCreatedBy.AutoSize = true;
-            lbCreatedBy.Font = new Font("Cascadia Mono SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lbCreatedBy.Location = new Point(282, 98);
-            lbCreatedBy.Name = "lbCreatedBy";
-            lbCreatedBy.Size = new Size(395, 48);
-            lbCreatedBy.TabIndex = 5;
-            lbCreatedBy.Text = "Joltzis © - Created by Lucas Franco\r\nat Sequor";
-            lbCreatedBy.TextAlign = ContentAlignment.MiddleCenter;
-            lbCreatedBy.Click += label2_Click;
+            this.lbCreatedBy.AutoSize = true;
+            this.lbCreatedBy.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbCreatedBy.Location = new System.Drawing.Point(197, 59);
+            this.lbCreatedBy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCreatedBy.Name = "lbCreatedBy";
+            this.lbCreatedBy.Size = new System.Drawing.Size(252, 32);
+            this.lbCreatedBy.TabIndex = 5;
+            this.lbCreatedBy.Text = "Joltzis © - Created by Lucas Franco\r\nat Sequor";
+            this.lbCreatedBy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Inicio
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.HighlightText;
-            ClientSize = new Size(959, 905);
-            Controls.Add(lbCreatedBy);
-            Controls.Add(picLogo);
-            Controls.Add(txtNomeJogador);
-            Controls.Add(label1);
-            Controls.Add(btnConfig);
-            Controls.Add(btnRank);
-            Controls.Add(btnJogar);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Inicio";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Joltzis ©";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.ClientSize = new System.Drawing.Size(671, 447);
+            this.Controls.Add(this.lbCreatedBy);
+            this.Controls.Add(this.picLogo);
+            this.Controls.Add(this.txtNomeJogador);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnConfig);
+            this.Controls.Add(this.btnRank);
+            this.Controls.Add(this.btnJogar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Joltzis ©";
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

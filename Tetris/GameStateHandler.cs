@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Tetris.Entities;
+using System.Windows.Input;
 
 namespace Tetris
 {
     public class GameStateHandler {
-
-
         private Block currentBlock;
         public Block CurrentBlock {
             get { return currentBlock; }
             set {
                 currentBlock = value;
                 currentBlock.Reset();
-
             }
         }
 
@@ -94,6 +92,29 @@ namespace Tetris
                 CurrentBlock.Move(-1, 0);
                 PlaceBlock();
             }
+        }
+
+        public void ListenMovement(KeyEventArgs evt)
+        {
+            switch(evt.KeyCode)
+            {
+                case Keys.Right:
+                    MoveBlockRight();
+                    break;
+                case Keys.Left:
+                    MoveBlockLeft();
+                    break;
+                case Keys.Up:
+                    RotateBlockCW();
+                    break;
+                default:
+                    return;
+            }
+        }
+
+        public void Update()
+        {
+            MoveBlockDown();
         }
     }
 }
